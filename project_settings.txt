@@ -1,0 +1,26 @@
+=================================== Open psql shell from Window Start Menu(Create Database - onlinelearning) =========================================================
+
+Server [localhost]: localhost
+Database [postgres]: postgres
+Port [5432]: 5432
+Username [postgres]: postgres
+Password for user postgres:
+psql (12.4)
+WARNING: Console code page (437) differs from Windows code page (1252)
+         8-bit characters might not work correctly. See psql reference
+         page "Notes for Windows users" for details.
+Type "help" for help.
+
+postgres=# CREATE DATABASE onlinelearning OWNER postgres;
+CREATE DATABASE
+postgres=# \l
+                                           List of databases
+      Name      |  Owner   | Encoding |      Collate       |       Ctype        |   Access privileges
+----------------+----------+----------+--------------------+--------------------+-----------------------
+ onlinelearning | postgres | UTF8     | English_India.1252 | English_India.1252 |
+ postgres       | postgres | UTF8     | English_India.1252 | English_India.1252 |
+ template0      | postgres | UTF8     | English_India.1252 | English_India.1252 | =c/postgres          +
+                |          |          |                    |                    | postgres=CTc/postgres
+ template1      | postgres | UTF8     | English_India.1252 | English_India.1252 | =c/postgres          +
+                |          |          |                    |                    | postgres=CTc/postgres
+(4 rows)
