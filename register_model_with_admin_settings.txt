@@ -1,0 +1,25 @@
+======================================= Access Admin site ===============================================
+
+http://127.0.0.1:8000/admin
+
+    --- We need to create super user to login here.
+    
+C:\Users\skuma\OneDrive\Desktop\Web_Project\OnlineLearning>python manage.py createsuperuser
+Username (leave blank to use 'skuma'): skumar
+Email address: s@gmail.com
+Password:                               --(test123$$)
+Password (again):
+Superuser created successfully.
+
+
+=================================== Register Models with Admin ==========================================
+
+In application admin.py make below changes
+
+from django.contrib import admin
+from .models import Subject, Topic, Subtopic
+
+# Register your models here.
+admin.site.register(Subject)
+admin.site.register(Topic)
+admin.site.register(Subtopic)
